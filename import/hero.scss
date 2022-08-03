@@ -1,0 +1,40 @@
+.hero {
+  background-color: #F5F5F5;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    bottom: -30px;
+    right: 15%;
+    content:url(../img/Rectangle.png)
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding-top: 24px;
+  padding-bottom: 65px;
+  min-height: 650px;
+  background: url(../img/EllipseBeats.png) 90% 65% no-repeat;
+}
+
+.hero__title-section {
+  width: 40%;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 36px;
+  padding-right: 15%;
+}
