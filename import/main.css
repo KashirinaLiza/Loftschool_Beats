@@ -1,0 +1,77 @@
+@import url(../import/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
+@import url(../import/hero.css);
+@import url(../import/header.css);
+@import url(../import/features.css);
+@import url(../import/button.css);
+@import url(../import/section.css);
+@import url(../import/why.css);
+@import url(../import/adv.css);
+@import url(../import/reviews.css);
+@import url(../import/interactive-avatar.css);
+@import url(../import/form.css);
+@import url(../import/fixed-menu.css);
+@import url(../import/map.css);
+body {
+  font-size: 16px;
+  font-family: "Play", sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiashed;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  color: #292929;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 1120px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+}
