@@ -1,0 +1,101 @@
+.headline__subtitle {
+  padding: 0 10%;
+}
+
+.adv-section {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    left: rem(100px);
+    bottom: 0;
+    content: url(../img/triangle.png);
+
+    @include phones {
+      left: rem(50px);
+    }
+  }
+  
+}
+
+
+.adv {
+  display: flex;
+  text-align: center;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.adv__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  &:before {
+    content: url(../img/Combination.png);
+    position: absolute;
+    top: rem(45px);
+    right: 0;
+    transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::before{
+      display: none;
+    }
+  }
+
+  @include phones {
+    display: flex;
+    padding: 0;
+  }
+
+  
+}
+
+.adv__img-wrapper {
+  display: inline-flex;
+  width: rem(128px);
+  height: rem(128px);
+  position: relative;
+  background-color: #F2F5F4;
+  border-radius: 50%;
+  margin-bottom: rem(24px);
+}
+
+.adv__icon {
+  width: rem(70px);
+  height: rem(70px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.battery {
+  width: rem(40px);
+}
+
+.adv__title {
+  font-size: rem(24px);
+  font-weight: 700;
+  margin-bottom: rem(7px);
+}
+
+.adv__desc {
+  color: #666666;
+  text-align: left;
+  margin-left: 3%;
+}

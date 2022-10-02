@@ -1,0 +1,12 @@
+.footer__container {
+  margin: 2% 0;
+  font-size: rem(18px);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
