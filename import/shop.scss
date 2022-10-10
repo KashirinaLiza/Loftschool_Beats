@@ -129,6 +129,7 @@
 .shop__blocks {
   display: flex;
   margin-bottom: 3%;
+  flex-wrap: wrap;
 
   @include tablets {
     justify-content: center;
@@ -146,4 +147,8 @@
 
 .shop__price {
   font-size: rem(36px);
+}
+
+.shop--button {
+  display: block
 }
