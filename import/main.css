@@ -1094,6 +1094,8 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .shop__blocks {
@@ -1115,6 +1117,10 @@
 
 .shop__price {
   font-size: 2.25rem;
+}
+
+.shop--button {
+  display: block;
 }
 
 .dropdown__menu {
