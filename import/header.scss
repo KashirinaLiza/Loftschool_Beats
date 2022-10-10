@@ -5,6 +5,10 @@
   font-size: rem(18px);
   color: #292929;
   margin-bottom: rem(30px);
+
+  @include mini {
+  margin-bottom: rem(20px);
+  }
 }
 
 .logo {

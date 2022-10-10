@@ -16,6 +16,11 @@
   @include tablets {
     margin-bottom: rem(30px);
   }
+
+  @include mini {
+    font-size: rem(22px);
+    margin-bottom: rem(22px);
+  }
 }
 
 .desc {

@@ -73,6 +73,10 @@
   @include phones {
     padding: rem(8px);
   }
+
+  @include mini {
+    padding: rem(4px);
+  }
 }
 
 .form__controls {

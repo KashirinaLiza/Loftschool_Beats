@@ -40,7 +40,7 @@
   position: relative;
 
   @include tablets {
-    width: 80%;
+    width: 90%;
   }
 
 }
@@ -63,6 +63,10 @@
     font-size: rem(32px);
   }
 
+  @include mini {
+    font-size: rem(22px);
+  }
+
 }
 
 .hero__title-desc {
@@ -72,6 +76,11 @@
 
   @include tablets {
     padding: 0;
+    margin-bottom: rem(16px)
+  }
+
+  @include phones {
+    font-size: rem(16px);
   }
 }
 
@@ -80,6 +89,11 @@
     width: 323px;
     margin-bottom: 10%;
   }
+
+  @include mini {
+    width: 220px;
+    margin-bottom: 6%
+    }
 }
 
 .hero__icons-section {

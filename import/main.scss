@@ -10,6 +10,7 @@ $red: #E01F3D;
 //breakpoints
 $tablets: 768px;
 $phones: 480px;
+$mini: 400px;
 
 //import
 @import './media.scss';
@@ -21,7 +22,6 @@ $phones: 480px;
 @import './button.scss';
 @import './section.scss';
 @import './why.scss';
-@import './adv.scss';
 @import './reviews.scss';
 @import './interactive-avatar.scss';
 @import './form.scss';
@@ -30,6 +30,9 @@ $phones: 480px;
 @import './hamburger.scss';
 @import './footer.scss';
 @import './socials.scss';
+@import './shop.scss';
+@import './dropdown.scss';
+@import './fullscreenmenu.scss';
 
 html {
   font-size: $baseFontSize;

@@ -16,7 +16,7 @@
      color: $red;
      background: #FFF;
    }
-}
+  }
   &--theme--transparent {
     background: transparent;
     text-transform: none;
@@ -27,4 +27,14 @@
       color: $red;
     }
   }
+
+  &__icon {
+    fill: white;
+    width: rem(20px);
+    height: rem(20px);
+    z-index: 100000;
+    position: relative;
+    cursor: pointer;
+  }
+
 }

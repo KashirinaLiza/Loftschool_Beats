@@ -1,5 +1,10 @@
+.footer {
+  position: relative;
+  width: 100%;
+}
+
 .footer__container {
-  margin: 2% 0;
+  padding: 1% 0;
   font-size: rem(18px);
   display: flex;
   justify-content: space-between;
