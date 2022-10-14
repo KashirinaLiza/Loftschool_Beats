@@ -1,0 +1,115 @@
+.reviews-section {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: url(../img/Ellipse.png);
+    left: rem(100px);
+    bottom: rem(-30px);
+    z-index: 90;
+
+    @include mini {
+      left: rem(30px);
+    }
+  }
+}
+
+.reviews__display {
+  background: #F8FAF9;
+  padding: rem(42px) rem(42px);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: rem(15px);
+  
+
+  &:before {
+    content: "";
+    display: block;
+    height: rem(83px);
+    width: rem(83px);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-61px);
+
+  }
+}
+
+.reviews__display-inner {
+  display: flex;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+.reviews__avatar {
+  width: rem(253px);
+  height: rem(264px);
+  margin-right: rem(40px);
+
+  @include tablets {
+    height: rem(130px);
+    width: rem(130px);
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+
+  @include mini {
+    height: rem(100px);
+    width: rem(100px);
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+}
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.reviews__content {
+  flex: 1;
+
+}
+
+.reviews__title {
+  font-size: rem(24px);
+  font-weight: 700;
+  margin-bottom: rem(27px);
+
+  @include mini {
+    font-size: rem(20px) ;
+    margin-bottom: rem(14px);
+  }
+  
+}
+
+.reviews__text {
+  color: #666;
+  margin-bottom: rem(38px);
+
+  @include mini {
+    margin-bottom: rem(14px);
+  }
+}
+
+.reviews__author {
+  font-size: rem(18px);
+  font-weight: 700;
+
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}

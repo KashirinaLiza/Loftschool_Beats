@@ -1,0 +1,29 @@
+.section {
+  height: 100vh;
+  min-height: rem(650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: rem(53px);
+  text-align: center;
+
+  @include tablets {
+    margin-bottom: 1%;
+    
+  }
+
+  @include mini {
+    font-size: rem(22px);
+    margin-bottom: rem(22px);
+  }
+}
+
+.desc {
+  color: #666666;
+}
