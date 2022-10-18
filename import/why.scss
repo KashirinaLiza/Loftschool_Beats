@@ -9,7 +9,11 @@
 
 .why__title {
   margin-bottom: rem(18px);
-  font-size: rem(32px);
+  font-size: rem(48px);
+
+  @include tablets {
+    font-size: rem(32px)
+  }
 
   @include mini {
     margin-bottom: rem(10px);
@@ -21,6 +25,11 @@
   padding: 0 10%;
 
   
+}
+
+.why__desctitle {
+  font-size: rem(24px);
+  font-weight: 700;
 }
 
 .why-section {

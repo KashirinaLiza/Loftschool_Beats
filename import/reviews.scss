@@ -141,6 +141,10 @@
   overflow: hidden;
   border-radius: 50%;
   position: relative;
+
+  &:hover {
+    border-color: $red;
+  }
  
   &.active {
     border-color: $red;

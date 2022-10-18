@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beats</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="./import/main.css">
 </head>
 <body>
@@ -87,7 +88,7 @@
                 </div>
               </div>
               <div class="why__text">
-                <div class="why__title">40 часов работы</div>
+                <div class="why__desctitle">40 часов работы</div>
                 <div class="why__desc">
                   <p>Наушники Beats Solo3 могут работать 
                     до 40 часов без подзарядки, чтобы вы 
@@ -102,7 +103,7 @@
                 </div>
               </div>
               <div class="why__text">
-                <div class="why__title">Фирменное звучание</div>
+                <div class="why__desctitle">Фирменное звучание</div>
                 <div class="why__desc">
                   <p>Фирменное звучание Beats в наушниках 
                     с технологией Bluetooth класса 
@@ -118,7 +119,7 @@
                 </div>
               </div>
               <div class="why__text">
-                <div class="why__title">Быстрая зарядка</div>
+                <div class="why__desctitle">Быстрая зарядка</div>
                 <div class="why__desc">
                   <p>Благодаря технологии Fast Fuel 
                     всего через 5 минут зарядки вы 
@@ -130,65 +131,237 @@
         </div>
       </section>
       <section class="section shop">
-        <ul class="container shop__container">
-        <li class="shop__atlas">
-        <div class="shop__arrow">
-          <div class="shop__arrow-left">
-            <img src="./img/left.png" alt="shop__arrow-left">
-          </div>
-        </div>
-        <div class="shop__main">
-          <div class="shop__img">
-            <img src="./img/SOLO_3.png" class="shop__img" alt="">
-          </div>
-          <div class="shop__info">
-            <div class="shop__parameters dropdown">
-              <div class="shop__menu">
-                <div class="shop__menu-img"></div>
-                <div class="shop__dropdown">
-                  <div class="dropdown__menu">
-                    <ul class="dropdown__list">
-                      <li class="dropdown__item">
-                        <img src="./img/Bluetooth.png" alt="dropdown__img" class="dropdown__img">
-                      </li>
-                      <li class="dropdown__item">
-                        <img src="./img/Distance.png" alt="dropdown__img" class="dropdown__img">
-                      </li>
-                      <li class="dropdown__item">
-                        <img src="./img/Charge.png" alt="dropdown__img" class="dropdown__img">
-                      </li>
-                      <li class="dropdown__item">
-                        <img src="./img/Weight.png" alt="dropdown__img" class="dropdown__img">
-                      </li>
-                      <li class="dropdown__item">
-                        <img src="./img/Garanty.png" alt="dropdown__img" class="dropdown__img">
-                      </li>
-                    </ul>
+        <div class="container">
+        <div class="shop__container">
+            <div class="shop__arrow">
+              <button class="shop__arrow direction-left"></button>
+              <button class="shop__arrow direction-right"></button>
+            </div>
+          <ul class="shop__list" id="slider">
+          <li class="shop__headphones">
+          <div class="shop__main">
+            <div class="shop__block">
+            <div class="shop__img">
+              <img src="./img/SOLO_3.png" class="shop__img" alt="">
+            </div>
+            <div class="shop__info">
+              <div class="shop__parameters dropdown">
+                <div class="shop__menu">
+                  <div class="shop__menu-img"></div>
+                  <div class="shop__dropdown">
+                    <div class="dropdown__menu">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <img src="./img/Bluetooth.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Distance.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Charge.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Weight.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Garanty.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="shop__title">beats solo 3. цвет «атласное серебро»</div>
+              <div class="shop__order">
+                <div class="shop__text">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</div>
+                <div class="shop__blocks">
+                  <div class="shop__blocks-block">Зарядка <br><b>2 часа</b></div>
+                  <div class="shop__blocks-block">Вес <br><b>215 грамм</b></div>
+                </div>
+                <div class="shop__blocks">
+                  <div class="shop__blocks-block shop__price">14 990 Р</div>
+                  <button class="button shop--button button--theme--red ">Заказать</button>
+                </div>
+              </div>
             </div>
-            <div class="shop__title">beats solo 3. цвет «атласное серебро»</div>
-            <div class="shop__order">
-              <div class="shop__text">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</div>
-              <div class="shop__blocks">
-                <div class="shop__blocks-block">Зарядка <br><b>2 часа</b></div>
-                <div class="shop__blocks-block">Вес <br><b>215 грамм</b></div>
-              </div>
-              <div class="shop__blocks">
-                <div class="shop__blocks-block shop__price">14 990 Р</div>
-                <button class="button shop--button button--theme--red ">Заказать</button>
-              </div>
             </div>
           </div>
-        </div>
-        <div class="shop__arrow">
-          <div class="shop__arrow-right">
-            <img src="./img/right.png" alt="shop__arrow-right">
+          </li>
+          <li class="shop__headphones">
+            <div class="shop__block">
+            <div class="shop__img">
+              <img src="./img/red.png" class="shop__img" alt="">
+            </div>
+            <div class="shop__info">
+              <div class="shop__parameters dropdown">
+                <div class="shop__menu">
+                  <div class="shop__menu-img"></div>
+                  <div class="shop__dropdown">
+                    <div class="dropdown__menu">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <img src="./img/Bluetooth2.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Distance2.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Charge2.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Weight2.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                        <li class="dropdown__item">
+                          <img src="./img/Garanty2.png" alt="dropdown__img" class="dropdown__img">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop__title">beats solo pro. цвет «красный цитрус»</div>
+              <div class="shop__order">
+                <div class="shop__text">Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.</div>
+                <div class="shop__blocks">
+                  <div class="shop__blocks-block">Зарядка <br><b>2 часа</b></div>
+                  <div class="shop__blocks-block">Вес <br><b>215 грамм</b></div>
+                </div>
+                <div class="shop__blocks">
+                  <div class="shop__blocks-block shop__price">14 990 Р</div>
+                  <button class="button shop--button button--theme--red ">Заказать</button>
+                </div>
+              </div>
+            </div>
+            </div>
           </div>
+          </li>
+          </ul>
         </div>
-        </li>
-        </ul>
+        </div>
+      </section>
+      <section class="team-section">
+        <div class="container">
+          <h2 class="team__title">команда</h2>
+          <ul class="team team--version--desktop">
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./img/Team_1.png" class="team__img" alt="man">
+              </div>
+              <button class="team__subtitle" type="button">Борис Федорович
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <b>Главный технолог</b><br>
+                  Отвечает за вкусовые качества и калорийность
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./img/Team_2.png" class="team__img" alt="blond">
+              </div>
+              <button class="team__subtitle" type="button">Алла Иванова
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <b>Специалист по упаковке</b><br>
+                  Автор запоминающегося стиля наших батончиков</div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./img/Team_3.png" class="team__img" alt="guy">
+              </div>
+              <button class="team__subtitle" type="button">Кирилл Матросов
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <b>Оператор</b><br>
+                  Разработал дизан наушников beats solo 3</div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./img/Team_4.png" class="team__img" alt="girl">
+              </div>
+              <button class="team__subtitle" type="button">Мила Рыжкова
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <b>PR, маркетинг</b><br>
+                  По всем вопросам сотрудничества и рекламы писать только Миле
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="team team--version--tablets">
+            <li class="team__item">
+              <button class="team__subtitle" type="button">Борис Федорович
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              
+              <div class="team__content">
+                
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./img/Team_1.png" class="team__img" alt="man">
+                  </div>
+                  <b>Главный технолог</b><br>
+                  Отвечает за вкусовые качества и калорийность
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <button class="team__subtitle" type="button">Алла Иванова
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              <div class="team__content">
+                
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./img/Team_2.png" class="team__img" alt="blond">
+                  </div>
+                  <b>Специалист по упаковке</b><br>
+                  Автор запоминающегося стиля наших батончиков</div>
+              </div>
+            </li>
+            <li class="team__item">
+              
+              <button class="team__subtitle" type="button">Кирилл Матросов
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              <div class="team__content">
+                
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./img/Team_3.png" class="team__img" alt="guy">
+                  </div>
+                  <b>Оператор</b><br>
+                  Разработал дизан наушников beats solo 3</div>
+              </div>
+            </li>
+            <li class="team__item">
+              
+              <button class="team__subtitle" type="button">Мила Рыжкова
+                <img src="./img/team.png" class="team__subtitle-img" alt="button">
+              </button>
+              <div class="team__content">
+                
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./img/Team_4.png" class="team__img" alt="girl">
+                  </div>
+                  <b>PR, маркетинг</b><br>
+                  По всем вопросам сотрудничества и рекламы писать только Миле
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section reviews-section">
         <div class="container">
@@ -196,7 +369,7 @@
           <div class="reviews">
             <div class="reviews__display">
               <ul class="reviews__list">
-              <li class="reviews__item active">
+              <li class="reviews__item active" data-linked="one">
               <div class="reviews__display-inner">
                 <div class="reviews__avatar">
                   <img src="./img/avatar1.png" alt="green hair" class="reviews__avatar-img">
@@ -212,7 +385,7 @@
                 </article>
               </div>
               </li>
-              <li class="reviews__item">
+              <li class="reviews__item" data-linked="two">
                 <div class="reviews__display-inner">
                   <div class="reviews__avatar">
                     <img src="./img/avatar2.png" alt="man" class="reviews__avatar-img">
@@ -228,7 +401,7 @@
                   </article>
                 </div>
                 </li>
-                <li class="reviews__item">
+                <li class="reviews__item" data-linked="three">
                   <div class="reviews__display-inner">
                     <div class="reviews__avatar">
                       <img src="./img/avatar3.png" alt="girl" class="reviews__avatar-img">
@@ -248,17 +421,17 @@
             </div>
             <ul class="reviews__switcher">
               <li class="reviews__switcher-item active">
-                <a href="" class="reviews__switcher-link">
+                <a href="" class="reviews__switcher-link" data-open="one">
                   <img src="./img/avatar1.png" alt="green hair" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item ">
-                <a href="" class="reviews__switcher-link">
+                <a href="" class="reviews__switcher-link" data-open="two">
                   <img src="./img/avatar2.png" alt="man" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item">
-                <a href="" class="reviews__switcher-link">
+                <a href="" class="reviews__switcher-link" data-open="three">
                   <img src="./img/avatar3.png" alt="black hair girl" class="interactive-avatar__img">
                 </a>
               </li>
@@ -269,40 +442,40 @@
       <section class="section form-section">
         <div class="container">
           <h2 class="section__title">закажите доставку</h2>
-          <form action="" class="form">
+          <form action="" class="form" id="form">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <span class="form__title">Имя</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="name">
                 </label>
                 <label class="form__block">
                   <span class="form__title">Телефон</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="phone">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <span class="form__title">Улица</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="street">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <span class="form__title">Дом</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" street="house">
                 </label>
                 <label class="form__block">
                   <span class="form__title">Корпус</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="sector">
                 </label>
                 <label class="form__block">
                   <span class="form__title">Квартира</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="flat">
                 </label>
                 <label class="form__block">
                   <span class="form__title">Этаж</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="floor">
                 </label>
               </div>
             </div>
@@ -447,8 +620,12 @@
       </svg>
     </a>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="import/JS/fullmenu.js"></script>
     <script src="import/JS/reviews.js"></script>
+    <script src="import/JS/team.js"></script>
+    <script src="import/JS/shop.js"></script>
+    <script src="import/JS/form.js"></script>
 </body>
 </html>
