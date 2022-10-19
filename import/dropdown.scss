@@ -1,0 +1,15 @@
+.dropdown__menu {
+  background-color: white;
+  opacity: .8;
+  width: rem(273px);
+  left: rem(91px);
+  bottom: 15%;
+  display: "";
+  position: relative;
+  display: none;
+}
+
+.dropdown:hover .dropdown__menu {
+  display: block;
+  cursor: pointer;
+}
