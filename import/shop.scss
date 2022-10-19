@@ -37,14 +37,15 @@
 .direction-left {
   position: absolute;
   left: 0;
-  background: url("../img/left.png") center center no-repeat;
+  background: url("../img/right.png") center center no-repeat;
+  transform: rotate(180deg);
 }
 
 .direction-right {
   position: absolute;
   right: 0;
-  background: url("../img/left.png") center center no-repeat;
-  transform: rotate(180deg);
+  background: url("../img/right.png") center center no-repeat;
+  
 }
 
 .shop__list {
