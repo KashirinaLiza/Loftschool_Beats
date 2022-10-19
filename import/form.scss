@@ -1,0 +1,178 @@
+.form-section {
+  position: relative;
+  background: url(../img/smart.png) center center no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+
+  @include tablets {
+    line-height: 1.05;
+  }
+
+}
+
+
+.form {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 14%;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+  
+}
+
+.form__col {
+  flex: 1;
+  margin-right: rem(17px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: rem(11px);
+
+  @include tablets {
+    margin-bottom: rem(2px);
+  }
+}
+
+.form__block {
+  flex: 1;
+  margin-right: rem(17px);
+  
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: rem(18px) rem(12px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(5px);
+
+  &:focus {
+    border-color: $red;
+    outline: none;
+  }
+
+  &--textarea {
+    height: rem(156px);
+    width: 100%;
+    resize: none;
+    border-radius: rem(5px);
+    margin-bottom: rem(14px);
+  }
+
+  @include tablets {
+    padding: rem(8px);
+    margin-bottom: 1%;
+  }
+
+  @include mini {
+    padding: rem(4px);
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include phones {
+  justify-content: center;
+  }
+}
+
+.radio {
+  display: flex;
+  position: relative;
+
+  cursor: pointer;
+  user-select: none;
+
+
+
+
+  &--checkbox {
+    .radio__visible {
+      border-radius: rem(4px);
+      margin-bottom: rem(46px);
+    
+  
+
+    &::before {
+      background: url(../img/check.png) center center no-repeat;
+    }
+  }
+}
+}
+
+.radio__title {
+  margin-left: rem(10px);
+  margin-right: rem(16px);
+  margin-bottom: rem(19px);
+ 
+}
+
+.radio__elem {
+  appearance: none;
+  position: absolute;
+
+
+  &:checked ~ .radio__visible{
+  &::before {
+    display: block;
+  }
+  }
+
+  &:focus ~ .radio__visible {
+    border-color: $red;
+  }
+}
+
+.radio__visible {
+  width: rem(26px);
+  height: rem(26px);
+  position: relative;
+  border-radius: 50%;
+  background-color: white;
+  border: solid rem(2px) transparent;
+
+  
+
+  &:before {
+    content: "";
+    height: rem(13px);
+    width: rem(13px);
+    display: none;
+    background: $red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+}

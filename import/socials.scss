@@ -1,0 +1,30 @@
+.socials__item {
+  margin-right: rem(10px);
+  display: inline-block;
+  vertical-align: middle;
+
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__icon {
+  display: block;
+  text-decoration: none;
+  width: rem(32px);
+  height: rem(32px);
+  position: relative;
+  cursor: pointer;
+  fill: grey;
+
+  :hover {
+    fill: black;
+    transition: .5s;
+  }
+
+  @include phones {
+    width: rem(24px);
+    height: rem(24px);
+  }
+}
+
