@@ -1,0 +1,109 @@
+.hero {
+  background-color: #F5F5F5;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    bottom: rem(-30px);
+    right: 15%;
+    content:url(../img/Rectangle.png)
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding-top: rem(24px);
+  padding-bottom: 3%;
+}
+
+.hero__display {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero__title-section {
+  width: 40%;
+  position: relative;
+
+  @include tablets {
+    width: 90%;
+  }
+
+}
+
+.hero__title-wrapper {
+  display: block;
+  top: 10%;
+
+}
+
+
+.hero__main-title {
+  font-size: rem(48px);
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: rem(22px);
+
+  @include tablets {
+    font-size: rem(36px);
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    font-size: rem(32px);
+  }
+
+  @include mini {
+    font-size: rem(22px);
+  }
+
+}
+
+.hero__title-desc {
+  font-size: rem(21px);
+  margin-bottom: rem(36px);
+  padding-right: 15%;
+
+  @include tablets {
+    font-size: rem(18px);
+    padding: 0;
+    margin-bottom: rem(8px)
+  }
+
+  @include phones {
+    font-size: rem(16px);
+  }
+}
+
+.hero__img-main {
+  @include tablets {
+    width: 303px;
+    margin-bottom: 2%;
+  }
+
+  @include mini {
+    width: 220px;
+    margin-bottom: 6%
+    }
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+}
+

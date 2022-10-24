@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  margin-top: -100px;
+  height: rem(100px);
+
+}
+
+.footer__container {
+  font-size: rem(18px);
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+ 
+  
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
+.phone-number {
+  justify-content: center;
+}
